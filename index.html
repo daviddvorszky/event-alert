@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Event Scheduler</title>
+</head>
+<body>
+    <h2>Sports Event Scheduler</h2>
+
+    <!-- Notification Lead Time -->
+    <label for="alertTime">Alert me minutes before the event:</label>
+    <input type="number" id="alertTime" value="2" min="0"><br>
+    <span style="font-size: .8rem; color: red;">Notifications must be enabled in both the browser and the OS</span><br><br>
+
+    <!-- Bulk Event Addition -->
+    <textarea id="bulkEvents" style="min-width: 300px;" rows="5" placeholder="Enter each event on a new line in the format: date, time, player, league"></textarea><br>
+    <button id="bulkAddButton">Add Events</button>
+    <button id="deleteAllButton">Delete All Events</button>
+
+    <h3>Upcoming Events:</h3>
+    <ul id="eventList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
